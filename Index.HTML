@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El peso real de la nube</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #EEF3EC;
+    --paper: #F7FAF6;
+    --ink: #16241D;
+    --ink-soft: #45564C;
+    --teal: #2C6E5C;
+    --teal-deep: #1D4B3F;
+    --sky: #3F6E8C;
+    --amber: #B9702E;
+    --line: rgba(22,36,29,0.16);
+    --line-strong: rgba(22,36,29,0.3);
+  }
 
+  *{ box-sizing: border-box; }
+  html{ scroll-behavior: smooth; }
+
+  body{
+    margin:0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, .display{
+    font-family: "Fraunces", serif;
+    color: var(--ink);
+    margin: 0;
+    font-weight: 500;
+  }
+
+  a{ color: var(--teal-deep); }
+
+  .wrap{
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  /* ---------- Header ---------- */
+  header.site{
+    padding: 28px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  header.site .wrap{
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .mark{
+    font-family:"Fraunces", serif;
+    font-size: 1.25rem;
+    letter-spacing: 0.01em;
+  }
+  .mark span{ color: var(--teal-deep); font-style: italic; }
+  nav.site a{
